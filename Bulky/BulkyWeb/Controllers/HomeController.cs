@@ -1,4 +1,4 @@
-using BulkyWeb.Models;
+﻿using BulkyWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -15,7 +15,10 @@ namespace BulkyWeb.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            //Return some view inside the View folder.İf no name inside View() method,it return same name with method name.
+            //View-->Home-->Index.cshtml
+
+            return View(); 
         }
 
         public IActionResult Privacy()
