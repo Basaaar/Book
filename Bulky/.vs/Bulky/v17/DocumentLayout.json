@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Repositories\\ECommerceApplication\\Bulky\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyWeb.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyWeb.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulkyweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyWeb.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulkyweb\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -27,6 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T18:41:02.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeDocumentMoniker": "BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeToolTip": "BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ViewState": "AQIAAAc1AAAAAAAAAAAwwA01AAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-29T18:40:22.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "BulkyWeb\\Views\\Category\\Index.cshtml",
@@ -39,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "BulkyWeb\\Controllers\\CategoryController.cs",
@@ -47,12 +81,11 @@
               "RelativeToolTip": "BulkyWeb\\Controllers\\CategoryController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T17:43:19.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T17:43:19.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\Program.cs",
               "RelativeDocumentMoniker": "BulkyWeb\\Program.cs",
@@ -60,8 +93,7 @@
               "RelativeToolTip": "BulkyWeb\\Program.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAqwCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T17:43:13.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T17:43:13.461Z"
             }
           ]
         }
