@@ -17,5 +17,9 @@ namespace BulkyWeb.Controllers
             List<Category> categories = _db.Categories.ToList();
             return View(categories);
         }
+        public IActionResult Create()
+        {
+            return View(new Category());//Eğer bu obje gönderilmez ise yine .net view kısmından yeni bir obje oluşturabilir.
+        }
     }
 }
