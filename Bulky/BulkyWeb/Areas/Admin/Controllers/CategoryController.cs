@@ -8,8 +8,9 @@ using BulkyBook.DataAccess.Repository.IRepository;
 using Bulky.Book.DataAccess.Repository.IRepository;
 using Bulky.Book.DataAccess.Repository;
 
-namespace BulkyBookWeb.Controllers
+namespace BulkyBookWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork unitOfWork;
@@ -89,7 +90,7 @@ namespace BulkyBookWeb.Controllers
         public IActionResult DeletePost(int? id)
         {
 
-            Category? categoryFromDb = unitOfWork.Category.Get(u=>u.Id== id);
+            Category? categoryFromDb = unitOfWork.Category.Get(u => u.Id == id);
             if (categoryFromDb == null)
                 return NotFound();
 
