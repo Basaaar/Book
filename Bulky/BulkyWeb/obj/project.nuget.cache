@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+sgke2nCJe1DTiVvVnxlhkKxdzR/SW9rmOH1Pm3iBIVF9se0KdRm70y7aijZdPeAW355wJQR+mkrQmMIKuqjug==",
+  "dgSpecHash": "LjWzbkthwx6UsbRmWbMt1RAicqxa1wC+Td2ECQp+gJM4UhbXITR4IKKnZCLr5d+rxZoArUEnMyH9xaWQo9UMdw==",
   "success": true,
-  "projectFilePath": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\BulkyWeb.csproj",
+  "projectFilePath": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\BulkyBookWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Şenol Başar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Şenol Başar\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
