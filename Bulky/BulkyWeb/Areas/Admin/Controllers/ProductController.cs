@@ -2,6 +2,7 @@
 
 using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BulkyBookWeb.Areas.Admin.Controllers
 {
@@ -17,10 +18,18 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         public IActionResult Index()
         {
             List<Product> products = unitOfWork.Product.GetAll().ToList();
+         
             return View(products);
         }
         public IActionResult Create()
         {
+            IEnumerable<SelectListItem> CategoryList = unitOfWork.Category.GetAll().ToList().Select(u => new SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id.ToString()
+
+            });
+            ViewBag.CategoryList = CategoryList;    
             return View(new Product());//Eğer bu obje gönderilmez ise yine .net view kısmından yeni bir obje oluşturabilir.
         }
         [HttpPost]
