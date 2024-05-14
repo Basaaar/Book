@@ -5,6 +5,8 @@ using BulkyBook.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace BulkyBookWeb.Areas.Admin.Controllers
 {
@@ -12,9 +14,11 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IUnitOfWork unitOfWork;
-        public ProductController(IUnitOfWork unitOfWork)
+        private readonly IWebHostEnvironment webHostEnvironment;
+        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             this.unitOfWork = unitOfWork;
+            this.webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
@@ -53,10 +57,19 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         public IActionResult Upsert(ProductVM obj,IFormFile? file)
         {
 
-
-
             if (ModelState.IsValid)
             {
+                string wwwRootPath=webHostEnvironment.WebRootPath;
+                if(file!=null)
+                {
+                    string fileName=Guid.NewGuid().ToString()+Path.GetExtension(file.FileName);  
+                    string productPath=Path.Combine(wwwRootPath,@"images\product");
+                    using (FileStream fileStram=new FileStream(Path.Combine(productPath,fileName),FileMode.Create))
+                    {
+                        file.CopyTo(fileStram);
+                    }
+                    obj.Product.ImageUrl = @"\images\product\" + fileName;
+                }
                 unitOfWork.Product.Add(obj.Product);
                 unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
@@ -76,7 +89,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
                 return View(obj);
 
             }
-            return View();
+       
         }
         public IActionResult Edit(int? id)
         {
