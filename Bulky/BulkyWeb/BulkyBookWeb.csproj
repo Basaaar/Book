@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <FrameworkReference Include="Microsoft.AspNetCore.App"></FrameworkReference>
     <Folder Include="Controllers\" />
   </ItemGroup>
 
