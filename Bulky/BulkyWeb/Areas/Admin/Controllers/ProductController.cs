@@ -4,6 +4,7 @@ using BulkyBook.Models;
 using BulkyBook.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http;
 
 namespace BulkyBookWeb.Areas.Admin.Controllers
 {
@@ -22,7 +23,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
 
             return View(products);
         }
-        public IActionResult Create()
+        public IActionResult Upsert(int? id) //Update and Insert
         {
 
             //ViewBag.CategoryList = CategoryList;    
@@ -37,10 +38,19 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
                 }),
                 Product = new Product()
             };
+            if(id==null || id==0)
+            {
+                //Create
+                return View(productVM);
+            }
+            else//Update
+            {
+                productVM.Product = unitOfWork.Product.Get(u => u.Id == id);
+            }
             return View(productVM);//Eğer bu obje gönderilmez ise yine .net view kısmından yeni bir obje oluşturabilir.
         }
         [HttpPost]
-        public IActionResult Create(ProductVM obj)
+        public IActionResult Upsert(ProductVM obj,IFormFile? file)
         {
 
 
