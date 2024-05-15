@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "noq9ywC0R3IvDDxfhIDvXfUZHsIC/XT9o4RkoKY2440=",
+  "Hash": "b7xcNMZetf3/pr127iXWCjhDkz2ePfaOOCkuRRffhgQ=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\751f8447-4f1f-48ab-8397-2fd2324039b6.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/product/751f8447-4f1f-48ab-8397-2fd2324039b6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\751f8447-4f1f-48ab-8397-2fd2324039b6.jpg"
     },
     {
       "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\js\\site.js",
