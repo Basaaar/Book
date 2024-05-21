@@ -136,33 +136,33 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             }
             return View();
         }
-        public IActionResult Delete(int? id)
-        {
-            if (id == null && id == 0)
-            {
-                return NotFound();
-            }
-            Product? prodcutFromDb = unitOfWork.Product.Get(u => u.Id == id);
-            if (prodcutFromDb == null)
-            {
-                return NotFound();
-            }
-            return View(prodcutFromDb);
-        }
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeletePost(int? id)
-        {
+        //public IActionResult Delete(int? id)
+        //{
+        //    if (id == null && id == 0)
+        //    {
+        //        return NotFound();
+        //    }
+        //    Product? prodcutFromDb = unitOfWork.Product.Get(u => u.Id == id);
+        //    if (prodcutFromDb == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(prodcutFromDb);
+        //}
+        //[HttpPost, ActionName("Delete")]
+        //public IActionResult DeletePost(int? id)
+        //{
 
-            Product? prodcutFromDb = unitOfWork.Product.Get(u => u.Id == id);
-            if (prodcutFromDb == null)
-                return NotFound();
+        //    Product? prodcutFromDb = unitOfWork.Product.Get(u => u.Id == id);
+        //    if (prodcutFromDb == null)
+        //        return NotFound();
 
-            unitOfWork.Product.Remove(prodcutFromDb);
-            unitOfWork.Save();
-            TempData["success"] = "Product deleted successfully";
-            return RedirectToAction("Index", "Product");
+        //    unitOfWork.Product.Remove(prodcutFromDb);
+        //    unitOfWork.Save();
+        //    TempData["success"] = "Product deleted successfully";
+        //    return RedirectToAction("Index", "Product");
 
-        }
+        //}
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll() {
@@ -172,6 +172,30 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
 
 
         }
+
+        [HttpDelete]
+        public IActionResult Delete(int? id)
+        {
+
+            Product? prodcutFromDb = unitOfWork.Product.Get(u => u.Id == id);
+            if (prodcutFromDb == null)
+            {
+                return Json(new { success = true, message = "Error while deleting" });
+
+            }
+            string wwwRootPath = webHostEnvironment.WebRootPath;
+            var oldImagePath = Path.Combine(wwwRootPath,
+                prodcutFromDb.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+            unitOfWork.Product.Remove(prodcutFromDb);
+            unitOfWork.Save();
+            return Json(new { success = true, message = "Delete Successful" });
+
+        }
+
         #endregion
     }
 }
