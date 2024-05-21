@@ -35,7 +35,7 @@ namespace Bulky.Book.DataAccess.Repository
                 objFromDb.Description = product.Description;
                 objFromDb.Title = product.Title;
                 objFromDb.CategoryId = product.CategoryId;
-                if(objFromDb.ImageUrl==null)
+                if(objFromDb.ImageUrl==null || objFromDb.ImageUrl == "")
                     objFromDb.ImageUrl=product.ImageUrl;
             }
            
