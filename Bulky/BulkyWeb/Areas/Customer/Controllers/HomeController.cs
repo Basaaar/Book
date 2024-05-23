@@ -24,7 +24,13 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
             IEnumerable<Product> prdouctList = _unitOfWork.Product.GetAll(includeProperties: "Category");
             return View(prdouctList);
         }
-
+        public IActionResult Details(int productId)
+        {
+            //Return some view inside the View folder.İf no name inside View() method,it return same name with method name.
+            //View-->Home-->Index.cshtml
+            Product prdouct = _unitOfWork.Product.Get(u=>u.Id== productId, includeProperties: "Category");
+            return View(prdouct);
+        }
         public IActionResult Privacy()
         {
             return View();
