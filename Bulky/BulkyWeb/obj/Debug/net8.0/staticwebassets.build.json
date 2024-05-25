@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F/JRiuOqbF01L4G8nHcNcrvIHR9aIkwqeMkXTzL4hdM=",
+  "Hash": "bglPHZLUqUUk7834OwtPpb7tR9YfVKsPqJo8bIWFPi0=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -1271,25 +1271,6 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\0fb8f9cf-4912-4cde-8f4e-453dd8380137.jpg"
     },
     {
-      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\21225a8a-232f-4ff3-be7d-a25b51d0d634.jpg",
-      "SourceId": "BulkyBookWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
-      "BasePath": "_content/BulkyBookWeb",
-      "RelativePath": "images/product/21225a8a-232f-4ff3-be7d-a25b51d0d634.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\21225a8a-232f-4ff3-be7d-a25b51d0d634.jpg"
-    },
-    {
       "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\3d8737d1-d67a-4a9d-91b8-ef35c91e5340.jpg",
       "SourceId": "BulkyBookWeb",
       "SourceType": "Discovered",
@@ -1328,6 +1309,25 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\49f01e0a-60c4-45f4-add8-39284df6b5de.jpg"
     },
     {
+      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\4bc32e3e-e8bd-4f1b-9841-84e3d3f94b43.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/product/4bc32e3e-e8bd-4f1b-9841-84e3d3f94b43.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\4bc32e3e-e8bd-4f1b-9841-84e3d3f94b43.jpg"
+    },
+    {
       "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\5270a99e-3e57-4eb6-ac45-a20b0bfe9b24.jpg",
       "SourceId": "BulkyBookWeb",
       "SourceType": "Discovered",
@@ -1345,25 +1345,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\5270a99e-3e57-4eb6-ac45-a20b0bfe9b24.jpg"
-    },
-    {
-      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\58a617b6-784d-4f1e-87a3-e52a65aa97aa.jpg",
-      "SourceId": "BulkyBookWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
-      "BasePath": "_content/BulkyBookWeb",
-      "RelativePath": "images/product/58a617b6-784d-4f1e-87a3-e52a65aa97aa.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\58a617b6-784d-4f1e-87a3-e52a65aa97aa.jpg"
     },
     {
       "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\6d5722b7-9965-480b-bd8e-0fa92f95ff2e.jpg",
@@ -1442,6 +1423,25 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\8ccf2722-b9f5-49ad-be37-ef6c6fab7e91.jpg"
     },
     {
+      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\94b21f66-ffa0-4046-a79c-9724698826a4.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/product/94b21f66-ffa0-4046-a79c-9724698826a4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\94b21f66-ffa0-4046-a79c-9724698826a4.jpg"
+    },
+    {
       "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\9663ea60-fb39-493e-88fd-a76df7a4c98f.jpg",
       "SourceId": "BulkyBookWeb",
       "SourceType": "Discovered",
@@ -1461,12 +1461,12 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\9663ea60-fb39-493e-88fd-a76df7a4c98f.jpg"
     },
     {
-      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\a7a097bb-da8f-4d4c-838b-206dd0ce52d9.jpg",
+      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\a46f93b4-9f49-4c6d-8531-95753ce5eb4d.jpg",
       "SourceId": "BulkyBookWeb",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
       "BasePath": "_content/BulkyBookWeb",
-      "RelativePath": "images/product/a7a097bb-da8f-4d4c-838b-206dd0ce52d9.jpg",
+      "RelativePath": "images/product/a46f93b4-9f49-4c6d-8531-95753ce5eb4d.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1477,15 +1477,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\a7a097bb-da8f-4d4c-838b-206dd0ce52d9.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\product\\a46f93b4-9f49-4c6d-8531-95753ce5eb4d.jpg"
     },
     {
-      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\c204cb97-4379-407f-bb69-8591507540f0.jpg",
+      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\d61fb109-215e-4ec0-b487-cbb77e452468.png",
       "SourceId": "BulkyBookWeb",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
       "BasePath": "_content/BulkyBookWeb",
-      "RelativePath": "images/product/c204cb97-4379-407f-bb69-8591507540f0.jpg",
+      "RelativePath": "images/product/d61fb109-215e-4ec0-b487-cbb77e452468.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1496,7 +1496,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\c204cb97-4379-407f-bb69-8591507540f0.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\product\\d61fb109-215e-4ec0-b487-cbb77e452468.png"
     },
     {
       "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\ee979ccf-e901-4e6a-b570-667060949a73.jpg",
@@ -1516,6 +1516,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\ee979ccf-e901-4e6a-b570-667060949a73.jpg"
+    },
+    {
+      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\f1816fee-4aa9-4d8a-b45d-2d05f95fd107.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/product/f1816fee-4aa9-4d8a-b45d-2d05f95fd107.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\f1816fee-4aa9-4d8a-b45d-2d05f95fd107.jpg"
+    },
+    {
+      "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\f3cd8fdb-7f0c-4c2a-bd1e-48f80cd37003.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/product/f3cd8fdb-7f0c-4c2a-bd1e-48f80cd37003.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\f3cd8fdb-7f0c-4c2a-bd1e-48f80cd37003.jpg"
     },
     {
       "Identity": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
