@@ -18,7 +18,7 @@ namespace BulkyBook.Models
         public int Count { get; set; }
         public string ApplicationUserId { get; set; }
 
-        [ForeignKey("ProdcutId")]
+        [ForeignKey("ProductId")]
         [ValidateNever]
         public Product Product { get; set; }
         [ForeignKey("ApplicationUserId")]

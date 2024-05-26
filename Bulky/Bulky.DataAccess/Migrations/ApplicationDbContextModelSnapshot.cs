@@ -246,9 +246,6 @@ namespace BulkyBook.DataAccess.Migrations
                     b.Property<int>("Count")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProdcutId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
@@ -256,7 +253,7 @@ namespace BulkyBook.DataAccess.Migrations
 
                     b.HasIndex("ApplicationUserId");
 
-                    b.HasIndex("ProdcutId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("ShoppingCharts");
                 });
@@ -517,7 +514,7 @@ namespace BulkyBook.DataAccess.Migrations
 
                     b.HasOne("BulkyBook.Models.Product", "Product")
                         .WithMany()
-                        .HasForeignKey("ProdcutId")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

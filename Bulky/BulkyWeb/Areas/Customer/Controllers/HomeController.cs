@@ -1,8 +1,11 @@
 ﻿
+using Bulky.Book.DataAccess.Repository;
 using Bulky.Book.DataAccess.Repository.IRepository;
 using BulkyBook.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace BulkyBookWeb.Areas.Customer.Controllers
 {
@@ -28,9 +31,34 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
         {
             //Return some view inside the View folder.İf no name inside View() method,it return same name with method name.
             //View-->Home-->Index.cshtml
-            Product prdouct = _unitOfWork.Product.Get(u=>u.Id== productId, includeProperties: "Category");
-            return View(prdouct);
+            ShoppingCart shoppingCart = new()
+            {
+                Count=1,
+                ProductId=productId,
+                Product = _unitOfWork.Product.Get(u => u.Id == productId, includeProperties: "Category"),
+            };
+        
+        
+            return View(shoppingCart);
         }
+        [HttpPost]
+        [Authorize]
+        public IActionResult Details(ShoppingCart shoppingCart)
+        {
+            //Return some view inside the View folder.İf no name inside View() method,it return same name with method name.
+            //View-->Home-->Index.cshtml
+
+            var claimsIdentiy = (ClaimsIdentity)User.Identity;//Default property
+            var userID = claimsIdentiy.FindFirst(ClaimTypes.NameIdentifier).Value;
+            shoppingCart.ApplicationUserId = userID;
+
+            _unitOfWork.ShoopingCart.Add(shoppingCart);
+            _unitOfWork.Save();
+           
+
+            return RedirectToAction(nameof(Index));
+        }
+
         public IActionResult Privacy()
         {
             return View();
