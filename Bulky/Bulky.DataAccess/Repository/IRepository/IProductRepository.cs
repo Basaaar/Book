@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bulky.Book.DataAccess.Repository.IRepository
+namespace BulkyBook.DataAccess.Repository.IRepository
 {
     public  interface IProductRepository:IRepository<Product>
     {
