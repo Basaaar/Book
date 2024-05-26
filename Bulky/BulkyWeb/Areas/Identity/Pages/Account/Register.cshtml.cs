@@ -150,8 +150,8 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account
                  CompanyList = _unitOfWork.Company.GetAll().Select(p => new SelectListItem
                  {
 
-                     Value = p.Name,
-                     Text = p.Id.ToString(),
+                     Text = p.Name,
+                     Value = p.Id.ToString(),
 
                  })
             };
@@ -176,6 +176,12 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account
                 user.PostalCode = Input.PostalCode;
                 user.PhoneNumber = Input.PhoneNumber;
                 user.Name = Input.Name;
+
+                if(Input.Role==SD.Role_Comp)
+                {
+                    user.CompanyId=Input.CompanyId;
+                }
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
