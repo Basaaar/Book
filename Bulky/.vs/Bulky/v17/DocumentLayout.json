@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "D:\\Repositories\\ECommerceApplication\\Bulky\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Migrations\\20240528191800_addOrderHeaderandDetailsToDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bulky.DataAccess\\Migrations\\20240528191800_addOrderHeaderandDetailsToDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulky.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulky.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulky.dataaccess\\repository\\orderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\orderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulky.dataaccess\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulky.dataaccess\\repository\\irepository\\iorderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\iorderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulky.dataaccess\\repository\\irepository\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulky.dataaccess\\migrations\\20240528191800_addorderheaderanddetailstodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|solutionrelative:bulky.dataaccess\\migrations\\20240528191800_addorderheaderanddetailstodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5448AAA-0CE4-47E4-A24A-10677AFC654B}|Bulky.DataAccess\\Bulky.Book.DataAccess.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulky.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,15 +50,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T19:26:33.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T19:24:25.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDetailRepository.cs",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\OrderDetailRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\OrderDetailRepository.cs",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\OrderDetailRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\OrderDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T19:23:29.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderHeaderRepository.cs",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\OrderHeaderRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\OrderHeaderRepository.cs",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\OrderHeaderRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\OrderHeaderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T19:22:02.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IOrderDetailRepository.cs",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IOrderDetailRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\IOrderDetailRepository.cs",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IOrderDetailRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\IOrderDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T19:21:03.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IOrderHeaderRepository.cs",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IOrderHeaderRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\IOrderHeaderRepository.cs",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IOrderHeaderRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\IOrderHeaderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T19:20:10.304Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "20240528191800_addOrderHeaderandDetailsToDB.cs",
               "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Migrations\\20240528191800_addOrderHeaderandDetailsToDB.cs",
               "RelativeDocumentMoniker": "Bulky.DataAccess\\Migrations\\20240528191800_addOrderHeaderandDetailsToDB.cs",
@@ -47,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
@@ -55,12 +157,11 @@
               "RelativeToolTip": "Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T19:16:16.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T19:16:16.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "Bulky.Models\\OrderDetail.cs",
@@ -68,12 +169,11 @@
               "RelativeToolTip": "Bulky.Models\\OrderDetail.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAwwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T19:02:11.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T19:02:11.206Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "OrderHeader.cs",
               "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\Bulky.Models\\OrderHeader.cs",
               "RelativeDocumentMoniker": "Bulky.Models\\OrderHeader.cs",
@@ -81,8 +181,7 @@
               "RelativeToolTip": "Bulky.Models\\OrderHeader.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAkwC8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T19:01:42.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T19:01:42.539Z"
             }
           ]
         }
