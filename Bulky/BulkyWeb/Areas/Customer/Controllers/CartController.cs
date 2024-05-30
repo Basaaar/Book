@@ -96,7 +96,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
 			else
 			{
 				//its a company user
-				ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusApproved;
+				ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusDelayedPayment;
 				ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusApproved;
 			}
 			_unitOfWork.OrderHeader.Add(ShoppingCartVM.OrderHeader);

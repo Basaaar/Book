@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Zlwxav+8PG0ad78XK8K36Q/VMZgYJSkJ7xzD6w5LwyPEluC9DzPJoVMh471/D3BcLaJbCYd9ESuDw5XyGdx3Uw==",
+  "dgSpecHash": "V3iIx/JpK4/HNsMrJC/A3OY2k80Z9G+yU4enHBNxsTf7zi3iNOuIecDSQ3twpjl7tpdvIX1P3FxVZDkQpBizVg==",
   "success": true,
   "projectFilePath": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\BulkyBookWeb.csproj",
   "expectedPackageFiles": [
@@ -190,6 +190,7 @@
     "C:\\Users\\Şenol Başar\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\Şenol Başar\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\Şenol Başar\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\Şenol Başar\\.nuget\\packages\\stripe.net\\44.9.0\\stripe.net.44.9.0.nupkg.sha512",
     "C:\\Users\\Şenol Başar\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Şenol Başar\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Şenol Başar\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
