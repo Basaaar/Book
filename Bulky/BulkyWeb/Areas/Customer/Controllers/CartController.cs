@@ -160,6 +160,28 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
 
 		public IActionResult OrderConfirmation(int id)
 		{
+			//Eğer ödeme ekranında ödeme başarılı olduysa bu ekrana gelecek .
+			//Session ıd üzeriden kontrol gerçekleştirerek ödemeini başarı durumunu kontrol edicez.
+			//Ödemenin başarılı olması durumunda veri tabanında UpdateStripePAyment güncellemesi yapmıştık.
+			OrderHeader orderHeader = _unitOfWork.OrderHeader.Get(u => u.Id == id, includeProperties: "ApplicationUser");
+			if (orderHeader.PaymentStatus != SD.PaymentStatusDelayedPayment)
+			{
+				//this is an order by customer
+				var service =new Stripe.Checkout.SessionService();
+				Stripe.Checkout.Session session = service.Get(orderHeader.SessionId);
+				if (session.PaymentStatus.ToLower() == "paid")//Stripe documentasyonundan baktı payment statuse.
+                {
+
+                    _unitOfWork.OrderHeader.UpdateStripePaymentID(id, session.Id, session.PaymentIntentId);
+                    _unitOfWork.OrderHeader.UpdateStatus(id,SD.StatusApproved,SD.PaymentStatusApproved);
+					_unitOfWork.Save();
+                }
+
+			}
+			//Shopping chart boşaltmamız gerek.
+			List<ShoppingCart> shoppingCarts = _unitOfWork.ShoopingCart.GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
+			_unitOfWork.ShoopingCart.RemoveRange(shoppingCarts);
+			_unitOfWork.Save();
 			return View(id);
 		}
 
