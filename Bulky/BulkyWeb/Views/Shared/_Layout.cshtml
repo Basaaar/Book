@@ -1,4 +1,6 @@
-﻿
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,9 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BulkyBookWeb</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="/images/book.png" style="width:30px" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,13 +33,13 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">Manage Order</a>
                         </li>
                         @if (User.IsInRole(SD.Role_Admin))
                         {
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Content Management
+                                    Content Managment
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -48,13 +52,26 @@
                                         <a class="dropdown-item" asp-area="Admin" asp-controller="Company" asp-action="Index">Company</a>
                                     </li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Create User</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="User" asp-action="Index">Manage User</a>
+                                    </li>
+
                                 </ul>
                             </li>
                         }
+
                         <li class="nav-item">
                             <a class="dropdown-item" asp-area="Customer" asp-controller="Cart" asp-action="Index"><i class="bi bi-cart"></i>&nbsp;</a>
                         </li>
+                       @*  <li class="nav-item">
+                            <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                                @await Component.InvokeAsync("ShoppingCart")
+                            </a>
+                        </li> *@
+
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -68,9 +85,10 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted bg-primary">
+
+    <footer class="border-top footer bg-primary text-muted ">
         <div class="text-center">
-            Made with <i class="bi bi-heart-fill"></i> by .Net Mastery<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            Made with <i class="bi bi-heart-fill"></i> by DotNetMastery
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
