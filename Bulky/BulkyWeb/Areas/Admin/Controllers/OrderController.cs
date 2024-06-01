@@ -133,7 +133,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
 
         [ActionName("Details")]
         [HttpPost]
-        public IActionResult Details_PAY_NOW()
+        public IActionResult Details_PAY_NOW()//Delayed Payment.Pay by company user.
         {
             OrderVM.OrderHeader = _unitOfWork.OrderHeader
                 .Get(u => u.Id == OrderVM.OrderHeader.Id, includeProperties: "ApplicationUser");
