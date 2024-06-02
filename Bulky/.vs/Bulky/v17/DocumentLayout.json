@@ -37,6 +37,10 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ShoppingCartViewComponent.cs",
@@ -46,12 +50,7 @@
               "RelativeToolTip": "BulkyWeb\\ViewComponents\\ShoppingCartViewComponent.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:55:50.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "WhenOpened": "2024-06-02T11:55:50.896Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "BulkyWeb\\Views\\Shared\\Components\\ShoppingCart\\Default.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T11:53:02.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:53:02.141Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "BulkyWeb\\Areas\\Customer\\Controllers\\CartController.cs",
               "ViewState": "AQIAAMIAAAAAAAAAAAAuwMUAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:30:13.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:30:13.042Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "BulkyWeb\\Areas\\Customer\\Controllers\\HomeController.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwB0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:15:00.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:15:00.615Z"
             },
             {
               "$type": "Document",
