@@ -2,7 +2,10 @@
 using Bulky.Book.DataAccess.Repository;
 using Bulky.Book.DataAccess.Repository.IRepository;
 using BulkyBook.Models;
+using BulkyBook.Models.ViewModels;
+using BulkyBook.Utility;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
@@ -24,6 +27,13 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
         {
             //Return some view inside the View folder.İf no name inside View() method,it return same name with method name.
             //View-->Home-->Index.cshtml
+            var claimsIdentiy = (ClaimsIdentity)User.Identity;//Default property
+            var claim = claimsIdentiy.FindFirst(ClaimTypes.NameIdentifier);
+           if(claim!=null)
+            {
+                HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoopingCart.GetAll(u => u.ApplicationUserId == claim.Value).Count());
+
+            }
             IEnumerable<Product> prdouctList = _unitOfWork.Product.GetAll(includeProperties: "Category");
             return View(prdouctList);
         }
@@ -58,9 +68,13 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
             {
                 cartFromDB.Count += shoppingCart.Count;
                 _unitOfWork.ShoopingCart.Update(cartFromDB);
-            }else
+                _unitOfWork.Save();
+            }
+            else
             {
                 _unitOfWork.ShoopingCart.Add(shoppingCart);
+                _unitOfWork.Save();
+                HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoopingCart.GetAll(u => u.ApplicationUserId == userID).Count());
             }
             TempData["success"] = "Cart updated successfuly";
 
