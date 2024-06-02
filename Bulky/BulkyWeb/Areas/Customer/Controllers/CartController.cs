@@ -27,7 +27,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
 			var userID = claimsIdentiy.FindFirst(ClaimTypes.NameIdentifier).Value;
 			ShoppingCartVM = new()
 			{
-				ShoppingCartList = _unitOfWork.ShoopingCart.GetAll(u => u.ApplicationUserId == userID, includeProperties: "Product"),
+				ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userID, includeProperties: "Product"),
 				OrderHeader = new(),
 			};
 			foreach (var cart in ShoppingCartVM.ShoppingCartList)
@@ -43,7 +43,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
 			var userID = claimsIdentiy.FindFirst(ClaimTypes.NameIdentifier).Value;
 			ShoppingCartVM = new()
 			{
-				ShoppingCartList = _unitOfWork.ShoopingCart.GetAll(u => u.ApplicationUserId == userID, includeProperties: "Product"),
+				ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userID, includeProperties: "Product"),
 				OrderHeader = new(),
 			};
 			ShoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.ApplicationUser.Get(u => u.Id == userID);
@@ -73,7 +73,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
 		{
 			var claimsIdentiy = (ClaimsIdentity)User.Identity;//Default property
 			var userID = claimsIdentiy.FindFirst(ClaimTypes.NameIdentifier).Value;
-			ShoppingCartVM.ShoppingCartList = _unitOfWork.ShoopingCart.GetAll(u => u.ApplicationUserId == userID, includeProperties: "Product");
+			ShoppingCartVM.ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userID, includeProperties: "Product");
 
 
 			ShoppingCartVM.OrderHeader.OrderDate = DateTime.Now;
@@ -179,33 +179,33 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
 
 			}
 			//Shopping chart boşaltmamız gerek.
-			List<ShoppingCart> shoppingCarts = _unitOfWork.ShoopingCart.GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
-			_unitOfWork.ShoopingCart.RemoveRange(shoppingCarts);
+			List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
+			_unitOfWork.ShoppingCart.RemoveRange(shoppingCarts);
 			_unitOfWork.Save();
 			return View(id);
 		}
 
 		public IActionResult Plus(int carId)
 		{
-			var cartFromDB = _unitOfWork.ShoopingCart.Get(u => u.Id == carId);
+			var cartFromDB = _unitOfWork.ShoppingCart.Get(u => u.Id == carId);
 			cartFromDB.Count += 1;
-			_unitOfWork.ShoopingCart.Update(cartFromDB);
+			_unitOfWork.ShoppingCart.Update(cartFromDB);
 			_unitOfWork.Save();
 			return RedirectToAction(nameof(Index));
 		}
 		public IActionResult Minus(int carId)
 		{
-			var cartFromDB = _unitOfWork.ShoopingCart.Get(u => u.Id == carId, tracked: true);
+			var cartFromDB = _unitOfWork.ShoppingCart.Get(u => u.Id == carId, tracked: true);
 			if (cartFromDB.Count <= 1)
 			{
-                HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoopingCart.
+                HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoppingCart.
 					GetAll(u => u.ApplicationUserId == cartFromDB.ApplicationUserId).Count() - 1);
-                _unitOfWork.ShoopingCart.Remove(cartFromDB);
+                _unitOfWork.ShoppingCart.Remove(cartFromDB);
 			}
 			else
 			{
 				cartFromDB.Count -= 1;
-				_unitOfWork.ShoopingCart.Update(cartFromDB);
+				_unitOfWork.ShoppingCart.Update(cartFromDB);
 			}
 
 
@@ -214,9 +214,9 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
 		}
 		public IActionResult Remove(int carId)
 		{
-			var cartFromDB = _unitOfWork.ShoopingCart.Get(u => u.Id == carId,tracked:true);			
-            HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoopingCart.GetAll(u => u.ApplicationUserId == cartFromDB.ApplicationUserId).Count() - 1);
-            _unitOfWork.ShoopingCart.Remove(cartFromDB);
+			var cartFromDB = _unitOfWork.ShoppingCart.Get(u => u.Id == carId,tracked:true);			
+            HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cartFromDB.ApplicationUserId).Count() - 1);
+            _unitOfWork.ShoppingCart.Remove(cartFromDB);
             _unitOfWork.Save();
 			return RedirectToAction(nameof(Index));
 		}
