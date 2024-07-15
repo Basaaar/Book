@@ -7,6 +7,7 @@ using System.Security.Claims;
 using BulkyBook.Utility;
 using Stripe.BillingPortal;
 using Stripe.Checkout;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace BulkyBookWeb.Areas.Customer.Controllers
 {
@@ -15,11 +16,13 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
 	public class CartController : Controller
 	{
 		private readonly IUnitOfWork _unitOfWork;
+		private readonly IEmailSender _emailSender;
 		[BindProperty]//Automatically populated this value when post action 
 		public ShoppingCartVM ShoppingCartVM { get; set; }
-		public CartController(IUnitOfWork unitOfWork)
+		public CartController(IUnitOfWork unitOfWork, IEmailSender _emailSender)
 		{
 			this._unitOfWork = unitOfWork;
+			this._emailSender = _emailSender;
 		}
 		public IActionResult Index()
 		{
@@ -178,6 +181,13 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
                 }
 				HttpContext.Session.Clear();
 			}
+
+
+			//TODO:Aktivate it when send order conformation email to user.
+			//_emailSender.SendEmailAsync(orderHeader.ApplicationUser.Email, "New Order-BulkyBook", $"<p>New Order Created- {orderHeader.Id}</p>");
+
+
+
 			//Shopping chart boşaltmamız gerek.
 			List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
 			_unitOfWork.ShoppingCart.RemoveRange(shoppingCarts);
