@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Repositories\\ECommerceApplication\\Bulky\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyBookWeb.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyBookWeb.csproj|solutionrelative:bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyBookWeb.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulkyweb\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyBookWeb.csproj|solutionrelative:bulkyweb\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyBookWeb.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulkyweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyBookWeb.csproj|solutionrelative:bulkyweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyBookWeb.csproj|d:\\repositories\\ecommerceapplication\\bulky\\bulkyweb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BECA61C2-48DD-43EF-AF00-6AAA418872DA}|BulkyWeb\\BulkyBookWeb.csproj|solutionrelative:bulkyweb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +30,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "BulkyWeb\\appsettings.json",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\appsettings.json",
+              "RelativeToolTip": "BulkyWeb\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-24T17:54:17.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BulkyWeb\\appsettings.Development.json",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\appsettings.Development.json",
+              "RelativeToolTip": "BulkyWeb\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-24T17:53:56.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T16:53:44.986Z",
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "BulkyWeb\\appsettings.Production.json",
+              "ToolTip": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\appsettings.Production.json",
+              "RelativeToolTip": "BulkyWeb\\appsettings.Production.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-24T17:53:36.033Z",
               "EditorCaption": ""
             }
           ]
