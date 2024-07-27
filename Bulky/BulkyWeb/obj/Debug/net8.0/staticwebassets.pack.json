@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\js\\user.js",
+      "PackagePath": "staticwebassets\\js\\user.js"
+    },
+    {
       "Id": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

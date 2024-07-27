@@ -17,6 +17,9 @@ namespace BulkyBook.DataAccess.Repository
             this._db = db;
         }
 
-       
+        public void Update(ApplicationUser applicationUser)
+        {
+            _db.ApplicationUsers.Update(applicationUser);
+        }
     }
 }
