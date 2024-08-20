@@ -57,33 +57,12 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             return View(productVM);//Eğer bu obje gönderilmez ise yine .net view kısmından yeni bir obje oluşturabilir.
         }
         [HttpPost]
-        public IActionResult Upsert(ProductVM obj,IFormFile? file)
+        public IActionResult Upsert(ProductVM obj,List<IFormFile> files)
         {
 
             if (ModelState.IsValid)
             {
-                string wwwRootPath=webHostEnvironment.WebRootPath;
-                if(file!=null)
-                {
-                    string fileName=Guid.NewGuid().ToString()+Path.GetExtension(file.FileName);  
-                    string productPath=Path.Combine(wwwRootPath,@"images\product");
-
-                    if(!string.IsNullOrEmpty( obj.Product.ImageUrl))//user update image.
-                    {
-                        var oldImagePath = Path.Combine(wwwRootPath,obj.Product.ImageUrl.TrimStart('\\'));
-                        if(System.IO.File.Exists(oldImagePath))
-                        {
-                            System.IO.File.Delete(oldImagePath);
-                        }
-                    }
-
-                    using (FileStream fileStram=new FileStream(Path.Combine(productPath,fileName),FileMode.Create))
-                    {
-                        file.CopyTo(fileStram);
-                    }
-                    obj.Product.ImageUrl = @"\images\product\" + fileName;
-                }
-                if(obj.Product.Id==0)
+                if (obj.Product.Id == 0)
                 {
                     unitOfWork.Product.Add(obj.Product);
                 }
@@ -91,9 +70,47 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
                 {
                     unitOfWork.Product.Update(obj.Product);
                 }
-               
+
                 unitOfWork.Save();
-                TempData["success"] = "Product created successfully";
+
+                string wwwRootPath=webHostEnvironment.WebRootPath;
+                if(files!=null)
+                {
+
+
+                    foreach(IFormFile file in files)
+                    {
+
+                        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                        string productPath = Path.Combine(wwwRootPath, @"images\products\product-"+obj.Product.Id);
+                        string finalPAth = Path.Combine(wwwRootPath, productPath);
+                        if(!Directory.Exists(finalPAth))
+                            Directory.CreateDirectory(finalPAth);
+                        using (FileStream fileStram = new FileStream(Path.Combine(finalPAth, fileName), FileMode.Create))
+                        {
+                            file.CopyTo(fileStram);
+                        }
+
+                        ProductImage productImage = new ProductImage()
+                        {
+
+                            ImageUrl = @"\" + productPath + @"\" + fileName,
+                            ProductId = obj.Product.Id,
+
+                        };
+                        if (obj.Product.ProductImages == null)
+                            obj.Product.ProductImages = new List<ProductImage>();
+
+                        obj.Product.ProductImages.Add(productImage);
+                      
+                    }
+                    unitOfWork.Product.Update(obj.Product);
+                    unitOfWork.Save();
+
+                    
+                }
+               
+                TempData["success"] = "Product created/updated successfully";
                 return RedirectToAction("Index", "Product");
             }
             else
@@ -187,12 +204,12 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
 
             }
             string wwwRootPath = webHostEnvironment.WebRootPath;
-            var oldImagePath = Path.Combine(wwwRootPath,
-                prodcutFromDb.ImageUrl.TrimStart('\\'));
-            if (System.IO.File.Exists(oldImagePath))
-            {
-                System.IO.File.Delete(oldImagePath);
-            }
+            //var oldImagePath = Path.Combine(wwwRootPath,
+            //    prodcutFromDb.ImageUrl.TrimStart('\\'));
+            //if (System.IO.File.Exists(oldImagePath))
+            //{
+            //    System.IO.File.Delete(oldImagePath);
+            //}
             unitOfWork.Product.Remove(prodcutFromDb);
             unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
