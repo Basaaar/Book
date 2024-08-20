@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using BulkyBook.Utility;
 using Microsoft.AspNetCore.Authorization;
+using Bulky.Book.DataAccess.Repository;
 
 namespace BulkyBookWeb.Areas.Admin.Controllers
 {
@@ -52,7 +53,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             }
             else//Update
             {
-                productVM.Product = unitOfWork.Product.Get(u => u.Id == id);
+                productVM.Product = unitOfWork.Product.Get(u => u.Id == id,includeProperties:"ProductImages");
             }
             return View(productVM);//Eğer bu obje gönderilmez ise yine .net view kısmından yeni bir obje oluşturabilir.
         }
@@ -183,6 +184,38 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         //    return RedirectToAction("Index", "Product");
 
         //}
+
+
+        public IActionResult DeleteImage(int imageId)
+        {
+            var imageToBeDeleted = unitOfWork.ProductImage.Get(u => u.Id == imageId);
+            int productId = imageToBeDeleted.ProductId;
+            if (imageToBeDeleted != null)
+            {
+                if (!string.IsNullOrEmpty(imageToBeDeleted.ImageUrl))
+                {
+                    var oldImagePath =
+                                   Path.Combine(webHostEnvironment.WebRootPath,
+                                   imageToBeDeleted.ImageUrl.TrimStart('\\'));
+
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                unitOfWork.ProductImage.Remove(imageToBeDeleted);
+                unitOfWork.Save();
+
+                TempData["success"] = "Deleted successfully";
+            }
+
+            return RedirectToAction(nameof(Upsert), new { id = productId });
+        }
+
+
+
+
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll() {
@@ -197,21 +230,30 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         public IActionResult Delete(int? id)
         {
 
-            Product? prodcutFromDb = unitOfWork.Product.Get(u => u.Id == id);
-            if (prodcutFromDb == null)
+            var productToBeDeleted = unitOfWork.Product.Get(u => u.Id == id);
+            if (productToBeDeleted == null)
             {
-                return Json(new { success = true, message = "Error while deleting" });
-
+                return Json(new { success = false, message = "Error while deleting" });
             }
-            string wwwRootPath = webHostEnvironment.WebRootPath;
-            //var oldImagePath = Path.Combine(wwwRootPath,
-            //    prodcutFromDb.ImageUrl.TrimStart('\\'));
-            //if (System.IO.File.Exists(oldImagePath))
-            //{
-            //    System.IO.File.Delete(oldImagePath);
-            //}
-            unitOfWork.Product.Remove(prodcutFromDb);
+
+            string productPath = @"images\products\product-" + id;
+            string finalPath = Path.Combine(webHostEnvironment.WebRootPath, productPath);
+
+            if (Directory.Exists(finalPath))
+            {
+                string[] filePaths = Directory.GetFiles(finalPath);
+                foreach (string filePath in filePaths)
+                {
+                    System.IO.File.Delete(filePath);
+                }
+
+                Directory.Delete(finalPath);
+            }
+
+
+            unitOfWork.Product.Remove(productToBeDeleted);
             unitOfWork.Save();
+
             return Json(new { success = true, message = "Delete Successful" });
 
         }

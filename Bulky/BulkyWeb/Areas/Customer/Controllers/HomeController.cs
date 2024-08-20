@@ -28,7 +28,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
             //Return some view inside the View folder.İf no name inside View() method,it return same name with method name.
             //View-->Home-->Index.cshtml
         
-            IEnumerable<Product> prdouctList = _unitOfWork.Product.GetAll(includeProperties: "Category");
+            IEnumerable<Product> prdouctList = _unitOfWork.Product.GetAll(includeProperties: "Category,ProductImages");
             return View(prdouctList);
         }
         public IActionResult Details(int productId)
@@ -39,7 +39,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
             {
                 Count=1,
                 ProductId=productId,
-                Product = _unitOfWork.Product.Get(u => u.Id == productId, includeProperties: "Category"),
+                Product = _unitOfWork.Product.Get(u => u.Id == productId, includeProperties: "Category,ProductImages"),
             };
         
         

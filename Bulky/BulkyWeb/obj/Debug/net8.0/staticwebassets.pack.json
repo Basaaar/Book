@@ -105,6 +105,18 @@
       "PackagePath": "staticwebassets\\images\\product\\f3cd8fdb-7f0c-4c2a-bd1e-48f80cd37003.jpg"
     },
     {
+      "Id": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\products\\product-2\\1750e8bf-5f1f-493e-bc93-a1433f561309.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-2\\1750e8bf-5f1f-493e-bc93-a1433f561309.jpg"
+    },
+    {
+      "Id": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\products\\product-2\\e88fd427-13e8-4798-b2c5-e99c10c19588.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-2\\e88fd427-13e8-4798-b2c5-e99c10c19588.jpg"
+    },
+    {
+      "Id": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\images\\products\\product-4\\a72b9ac9-6414-4eab-b872-341507339db3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-4\\a72b9ac9-6414-4eab-b872-341507339db3.jpg"
+    },
+    {
       "Id": "D:\\Repositories\\ECommerceApplication\\Bulky\\BulkyWeb\\wwwroot\\js\\company.js",
       "PackagePath": "staticwebassets\\js\\company.js"
     },
